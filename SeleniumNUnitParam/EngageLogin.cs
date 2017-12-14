@@ -26,7 +26,7 @@ namespace SeleniumNUnitParam
         [Test]
         public void LoginCheck2()
         {
-            Driver.Navigate().GoToUrl("http://Sorce%5CSynverse%2ETest1:st%3A9874%40s@beacon-test/sorce/beacon/");
+            Driver.Navigate().GoToUrl("http://Sorce%5CSynverse%2ETes:st%3A9874%40s@beacon-test/sorce/beacon/");
             System.Threading.Thread.Sleep(5000);
             TimeSpan pageloadwait = TimeSpan.FromSeconds(30.00);
             Driver.Manage().Timeouts().ImplicitlyWait(pageloadwait);
