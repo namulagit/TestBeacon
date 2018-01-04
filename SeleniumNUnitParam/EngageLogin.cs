@@ -15,7 +15,7 @@ namespace SeleniumNUnitParam
         [Test]
         public void LoginCheck()
         {
-            Driver.Navigate().GoToUrl("http://loaduser200:Vanadium2200@beacon-test/sorce/");
+            Driver.Url = "http://loaduser200:Vanadium2200@beacon-test/sorce/";
             System.Threading.Thread.Sleep(10000);
             TimeSpan pageloadwait = TimeSpan.FromSeconds(30.00);
             Driver.Manage().Timeouts().ImplicitlyWait(pageloadwait);
@@ -26,7 +26,7 @@ namespace SeleniumNUnitParam
         [Test]
         public void LoginCheck2()
         {
-            Driver.Navigate().GoToUrl("http://loaduser195:Vanadium2200@beacon-test/sorce/");
+            Driver.Url="http://loaduser195:Vanadium2200@beacon-test/sorce/";
             System.Threading.Thread.Sleep(5000);
             TimeSpan pageloadwait = TimeSpan.FromSeconds(30.00);
             Driver.Manage().Timeouts().ImplicitlyWait(pageloadwait);
